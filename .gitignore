@@ -1,5 +1,5 @@
 *.py
-genemolink/*
+genomelink/*
 *test*
 *.mp3
 node_modules/*
