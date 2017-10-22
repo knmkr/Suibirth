@@ -1,5 +1,5 @@
 ## Inspiration
-A person dies by suicide about every 11.9 minutes in the United States. About 210 people committed suicide during the time of the hackathon.
+A person dies by suicide about every **11.9** minutes in the United States. About **210** people committed suicide during the time of the hackathon.
 
 What if, we can change this and save more lives?
 
@@ -31,7 +31,7 @@ Suibirth detects potential suicide and sends text messages to remind people arou
 
     danger_spot
     -----------------------------------
-    id      int     primary_key
+    id      int         primary_key
     area    polygon     spatial_index
     ```
 
