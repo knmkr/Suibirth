@@ -1,0 +1,29 @@
+{
+  "name": "suibirth",
+  "version": "1.0.0",
+  "description": "Suibirth is a hackathon project",
+  "main": "messagetest.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mysql": "^2.15.0",
+    "request": "^2.83.0",
+    "synchronize": "^2.0.0",
+    "twilio": "^3.9.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Espressomilk/Suibirth.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Espressomilk/Suibirth/issues"
+  },
+  "homepage": "https://github.com/Espressomilk/Suibirth#readme"
+}
