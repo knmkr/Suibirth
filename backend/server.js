@@ -51,9 +51,9 @@ const options = {
 function getUserReport(username) {
 	reportUrl = 'https://genomicexplorer.io/v1/reports/depression/?population=european';
 	var score = 0;
-	request.get(reportUrl, options, function(error, response, body) {
-		score += body.summary.score;
-	});
+	// request.get(reportUrl, options, function(error, response, body) {
+	// 	score += body.summary.score;
+	// });
 	if (username == '8582478145') score = 10;
 	else score = 0;
 	connection.query('UPDATE users SET score = ? WHERE username = ?', [score, username], function(err, result) {
