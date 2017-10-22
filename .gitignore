@@ -1,5 +1,5 @@
-*.py
-genomelink/*
-*test*
-*.mp3
-node_modules/*
+backend/*.py
+backend/genomelink/*
+backend/*test*
+backend/*.mp3
+backend/node_modules/*
