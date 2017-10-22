@@ -211,7 +211,7 @@ function sendAlert(result) {
 				var to = ('+1' + victim_detected[i]).trim();
 				client.calls.create({
 					url: "http://108.61.247.112/public/translate_tts.xml",
-					to: '+18582479460', // Text this number
+					to: to, // Text this number
 					from: myphonenumber // From a valid Twilio number
 				}, function(err, call) {
 					console.log(call.sid);
@@ -224,15 +224,15 @@ function sendAlert(result) {
 				var longtitute = victim_location[0].split('(')[1].split(' ')[0].trim()
 				var latitute = victim_location[0].split(' ')[1].split(')')[0].trim()
 				var locUrl = 'https://www.google.com/maps/search/?api=1&query=' + longtitute + ',' + latitute;
-				console.log(locUrl);
-				console.log(to);
-				// client.messages.create({
-				// 	body: 'ALERT: Someone around you may want to commit suicide. Location: ' + locUrl,
-				// 	to: to, // Text this number
-				// 	from: myphonenumber // From a valid Twilio number
-				// }, function(err, message) {
-				// 	console.log(message.sid);
-				// });
+				// console.log(locUrl);
+				// console.log(to);
+				client.messages.create({
+					body: 'ALERT: Someone around you may want to commit suicide. Location: ' + locUrl,
+					to: to, // Text this number
+					from: myphonenumber // From a valid Twilio number
+				}, function(err, message) {
+					console.log(message.sid);
+				});
 			}
 			clearInterval(checkInterval);
 		}
