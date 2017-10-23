@@ -1,7 +1,7 @@
 ## Inspiration
 A person dies by suicide about every **11.9** minutes in the United States. About **210** people committed suicide during the time of the hackathon.
 
-What if, we can change this and save more lives?
+What if, we can change this and save lives?
 
 When someone is going to commit suicide, it is the people around him that are more likely to be the angel to save, to give new birth to the poor lost soul.
 
